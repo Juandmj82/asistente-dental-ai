@@ -155,7 +155,7 @@ export default function App() {
       <header className="sticky top-0 z-40 bg-white/80 backdrop-blur-xl border-b border-black/[0.06]">
         <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <span className="text-xl">🦷</span>
+            <img src="/logo-san-jeronimo.svg" alt="San Jerónimo Logo" className="w-9 h-9 rounded-xl shadow-xs" />
             <div>
               <span className="text-sm font-semibold tracking-tight text-[#1D1D1F]">San Jerónimo</span>
               <span className="text-[11px] text-[#86868B] ml-2 font-normal hidden sm:inline">

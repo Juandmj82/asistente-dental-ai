@@ -71,3 +71,8 @@ Evitar a toda costa los colores brillantes de juguete o fondos grises planos de 
 * Uso de oraciones cortas y afirmativas:
   * En lugar de: *"¡Bienvenido al sistema inteligente de gestión dental de vanguardia!"*
   * Usar: *"Agenda del consultorio. Gestionada con precisión."*
+
+## 6. Isotipo e Identidad de Marca Oficial (`/logo-san-jeronimo.svg`)
+* **Construcción geométrica:** Squircle continuo con radio continuo Apple (`rx="26"`), sobre fondo cerámico oscuro (`#1D1D1F`).
+* **Símbolo:** Silueta geométrica monolítica que sintetiza la anatomía de una corona dental con la sutileza de una "S" entrelazada, acompañada de un arco de luz en zafiro médico (`#0071E3`) que simboliza pulcritud, exactitud e higiene.
+* **Uso:** Favicon, cabecera de la aplicación y perfil oficial de WhatsApp.
