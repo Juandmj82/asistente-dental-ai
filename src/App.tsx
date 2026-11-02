@@ -538,19 +538,19 @@ export default function App() {
             {/* Ejemplos de Lenguaje Colombiano */}
             <div className="bg-white/80 backdrop-blur-md rounded-3xl p-5 border border-black/[0.05] shadow-xs space-y-3">
               <h4 className="text-xs font-semibold text-[#1D1D1F] tracking-tight">
-                Modismos Colombianos (Prueba Rápida)
+                Respuestas Habituales de Pacientes
               </h4>
               <p className="text-xs text-[#86868B]">
                 Haz clic para simular la respuesta del paciente:
               </p>
               <div className="space-y-1.5">
                 {[
-                  "De una doc, allá estaré firme",
-                  "Me salió un chicharrón en el camello, me toca moverla",
-                  "Vecina qué pena, ¿será que me la puede pasar pal viernes en la tardecita?",
-                  "Definitivamente no puedo seguir con el tratamiento, muchas gracias",
-                  "¿A qué hora fue que me dijeron? Se me embolató el mensaje",
-                  "Parce tengo la muela que me estalla, necesito que me atiendan ya"
+                  "Buenas tardes, sí señora, confirmo mi asistencia a esa hora",
+                  "Se me presentó un inconveniente en el trabajo, ¿será posible cambiarla?",
+                  "Qué pena con la doctora, ¿será que me la pueden pasar para el viernes en la tarde?",
+                  "Por motivos personales no podré continuar con el tratamiento por ahora, muchas gracias",
+                  "Disculpe, ¿a qué hora quedó programada mi cita? No encuentro el mensaje",
+                  "Tengo un dolor muy fuerte y se me inflamó la encía, ¿me pueden atender de urgencia?"
                 ].map((ejemplo, idx) => (
                   <button
                     key={idx}
@@ -631,7 +631,7 @@ export default function App() {
               <div>
                 <h2 className="text-base font-semibold tracking-tight text-[#1D1D1F] flex items-center gap-2">
                   <Sparkles className="w-4 h-4 text-[#FF9F0A]" />
-                  Suite de Validación Externa: 20 Casos Coloquiales Colombianos
+                  Suite de Validación Externa: 20 Casos de Pacientes Reales
                 </h2>
                 <p className="text-xs text-[#86868B] mt-0.5">
                   Criterio de aceptación SDD: Precisión mínima del 90% con cero datos clínicos.
