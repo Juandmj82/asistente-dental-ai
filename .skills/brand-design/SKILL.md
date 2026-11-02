@@ -1,48 +1,73 @@
 ---
-name: dental-brand-design
-description: Guía de identidad visual, tono de voz y diseño de marca para la Clínica Dental San Jerónimo.
-version: 1.0.0
+name: dental-brand-design-apple-aesthetic
+description: Sistema de diseño editorial inspirado en la estética de Apple (minimalismo radical, tipografía refinada, superficies cerámicas, contraste sutil y microinteracciones de alta gama) para la Clínica Dental San Jerónimo.
+version: 2.0.0
 ---
 
-# Skill: Diseño de Marca — Clínica Dental San Jerónimo
+# Skill: Identidad Visual y Sistema de Diseño — Estilo Apple
 
-Esta skill instruye a los agentes sobre cómo aplicar consistentemente la identidad visual, el sistema de diseño y el tono de comunicación en todas las interfaces y mensajes del consultorio.
+Esta skill instruye al agente y a los desarrolladores a construir interfaces médicas que se alejen por completo de los dashboards genéricos de IA (evitando degradados cliché púrpura/cian, tarjetas saturadas con bordes pesados y tipografías genéricas). En su lugar, aplica los principios de diseño industrial y digital de **Apple**.
 
-## 1. Identidad y Propuesta de Valor
-* **Nombre:** Clínica Dental San Jerónimo
-* **Esencia:** Odontología cercana, profesional, sin dolor y transparente.
-* **Público objetivo:** Familias y profesionales en Bogotá que valoran la puntualidad y el trato humano.
+---
 
-## 2. Paleta de Colores y Significado
-* **Primario (Teal / Verde Azulado Médico):**
-  * Hex: `#0D9488` (Tailwind `teal-600`) / Hover: `#0F766E` (`teal-700`)
-  * Transmite higiene clínica, calma, salud y confianza médica sin la frialdad del azul hospitalario genérico.
-* **Acentos de Estado:**
-  * **Confirmado / Éxito:** `#059669` (Tailwind `emerald-600`) y fondos `emerald-50`.
-  * **Atención / T-24h / Alerta:** `#D97706` (Tailwind `amber-600`) y fondos `amber-50`.
-  * **Urgencia / Cancelación:** `#E11D48` (Tailwind `rose-600`) y fondos `rose-50`.
-* **Neutros y Superficies:**
-  * Fondo general: `#F8FAFC` (Tailwind `slate-50`).
-  * Contenedores / Tarjetas: `#FFFFFF` con borde fino `#E2E8F0` (`slate-200`) y esquinas redondeadas `rounded-2xl`.
-  * Texto principal: `#0F172A` (`slate-900`) y texto secundario `#64748B` (`slate-500`).
+## 1. Filosofía de Marca y Dirección de Arte
 
-## 3. Tipografía y Jerarquía
-* **Familia tipográfica:** `Inter`, tipografía sin gracias moderna, legible en pantallas táctiles y dispositivos móviles.
-* **Escala:**
-  * Títulos de sección: `text-base` / `text-lg` en negrita (`font-bold`).
-  * Etiquetas de estado: `text-xs` en seminegrita (`font-semibold`) con `px-2.5 py-0.5 rounded-full`.
-  * Textos de apoyo / metadatos: `text-xs` o `text-[11px]`.
+* **Concepto:** *«Precisión clínica, calidez invisible»*.
+* **Referente:** La elegancia sobria de `apple.com`: generosidad de aire blanco, contraste tipográfico preciso, superficies translúcidas con desenfoque de fondo (*glassmorphism* tenue), esquinas perfectamente suavizadas (*squircle* / radios continuos) y ausencia de adornos innecesarios.
+* **Sensación al usuario:** Más parecido a un dispositivo de diseño que a un software administrativo aburrido. Transmite pulcritud, exactitud quirúrgica y confianza premium.
 
-## 4. Tono de Comunicación (Copywriting)
-* **Canal WhatsApp:**
-  * Cercano, cálido pero formal y sumamente claro.
-  * Nunca usar jerga médica incomprensible (ej. decir "cita para limpieza preventiva" en vez de "sesión de profilaxis periodontal").
-  * Opciones cerradas para facilitar la respuesta: *"1 para Confirmar o 2 si necesitas Reprogramar"*.
-* **Interfaz de la Asistente:**
-  * Accionable y directo al punto.
-  * Los botones deben describir la acción exacta: `Aprobar y Mover`, `Ofrecer hueco`, `Reenganchar`.
+---
 
-## 5. Criterios de Aceptación de Diseño
-* Cualquier nueva vista debe utilizar los tokens de color `teal`, `emerald`, `amber` y `slate`.
-* Mantener consistencia visual con bordes suaves (`rounded-xl` y `rounded-2xl`) y sombras sutiles (`shadow-xs` / `shadow-sm`).
-* Las alertas de pacientes en riesgo o cambios pendientes siempre deben incluir un icono descriptivo de `lucide-react`.
+## 2. Paleta de Color Cerámica y Acentos de Luz
+
+Evitar a toda costa los colores brillantes de juguete o fondos grises planos de plantillas baratas.
+
+* **Fondo Principal:** `#FBFBFD` (el icónico blanco cerámico cálido de Apple).
+* **Superficies / Tarjetas elevadas:**
+  * Fondo: `rgba(255, 255, 255, 0.82)` con filtro `backdrop-blur-md`.
+  * Borde: `1px solid rgba(0, 0, 0, 0.05)` (borde ultra-delgado, casi imperceptible pero nítido).
+  * Sombra: `0 4px 20px -2px rgba(0, 0, 0, 0.03)` (sombra difusa y natural).
+* **Tipografía y Contraste:**
+  * Texto primario: `#1D1D1F` (negro carbón profundo de Apple, nunca `#000000` puro).
+  * Texto secundario: `#86868B` (gris editorial neutro).
+  * Texto terciario / pies de foto: `#A1A1A6`.
+* **Acentos Funcionales:**
+  * **Azul Sistema Apple:** `#0071E3` (Hover: `#0077ED`) para acciones principales, botones de confirmación y estados activos.
+  * **Verde Bio-Salud:** `#34C759` para estados de confirmación y asistencia garantizada.
+  * **Ámbar Precaución:** `#FF9F0A` para citas pendientes de confirmación o alerta de 24h.
+  * **Coral / Baja:** `#FF3B30` para cancelaciones o tratamientos en riesgo de abandono.
+
+---
+
+## 3. Tipografía y Composición Espacial
+
+* **Fuente:** `-apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif`.
+* **Tracking y Kerning:**
+  * Títulos principales: `tracking-tight` (`-0.025em`) con peso tipográfico `font-semibold` o `font-medium` (Apple casi nunca usa negritas pesadas agresivas).
+  * Números y métricas: Numerales elegantes con `font-semibold` y unidades sutiles en texto secundario.
+  * Textos descriptivos: `leading-relaxed` con suficiente interlineado para lectura descansada.
+* **Espaciado y Proporciones:**
+  * Padding generoso: Las tarjetas respiran con `p-6` o `p-8`.
+  * Radios: `rounded-3xl` (24px a 28px) en tarjetas principales; `rounded-full` en píldoras y botones de llamada a la acción.
+
+---
+
+## 4. Componentes y Patrones de Interfaz
+
+* **Botones Estilo Apple:**
+  * *Primario:* Botón tipo píldora (`rounded-full`), fondo `#0071E3`, texto blanco nítido, padding `px-5 py-2`, micro-interacción de escala sutil al pulsar (`active:scale-98`).
+  * *Secundario / Botón de Vidrio:* Fondo `rgba(0, 0, 0, 0.04)` hover `rgba(0, 0, 0, 0.07)`, texto `#1D1D1F`, sin bordes agresivos.
+* **Píldoras de Estado (Badges):**
+  * Fondos tenues al 10% de opacidad del color funcional con texto nítido: ej. `bg-[#34C759]/10 text-[#248A3D]`.
+* **Segmented Controls (Pestañas de Navegación):**
+  * Barra de control encapsulada en cápsula gris suave `bg-[#E5E5EA]/50` con el selector activo en blanco puro flotante con sombra suave `shadow-sm rounded-full`.
+
+---
+
+## 5. Tono Editorial y Microcopy
+
+* Directo, seguro y sin rodeos.
+* Cero exclamaciones forzadas ni emojis innecesarios en la interfaz.
+* Uso de oraciones cortas y afirmativas:
+  * En lugar de: *"¡Bienvenido al sistema inteligente de gestión dental de vanguardia!"*
+  * Usar: *"Agenda del consultorio. Gestionada con precisión."*
