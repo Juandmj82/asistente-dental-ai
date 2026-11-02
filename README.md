@@ -52,3 +52,9 @@ npm install
 npm run build
 npm run preview
 ```
+
+---
+
+## 🌐 Demo en Producción
+
+* **URL en Vivo:** [https://asistente-dental-ai.vercel.app/](https://asistente-dental-ai.vercel.app/)
